@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(app());
+  runApp(App());
 }
 
-class app extends StatelessWidget {
+class App extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MyAppState();
+  }
+}
+
+class _MyAppState extends State<App> {
+  List<String> products = ['Food Tester'];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
